@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+}
+body > .page {
+  display: flex;
+  flex-wrap: wrap;
+}
+body > .page > section {
+  width: 50vw;
+  height: 50vh;
+}
+
+#app1 {
+  border: 1px solid red;
+}
+
+#app2 {
+  border: 1px solid red;
+}
+.tab-bar {
+  display: flex;
+}
+.tab-bar > li {
+  width: 50%;
+  border: 1px solid blueviolet;
+}
+.tab-bar > li.selected {
+  background: blue;
+}
+.tab-content {
+}
+.tab-content > li {
+  display: none;
+}
+.tab-content > li.active {
+  display: block;
+}
+
+#app3 .square {
+  border: 1px solid grey;
+  margin-top: 10vw;
+  margin-left: 10vw;
+  height: 10vw;
+  width: 10vw;
+  transition: transform 1s;
+}
+
+#app3 .square.active {
+  transform: translateX(15vw);
+  border-radius: 50%;
+}
+
+@keyframes change {
+  0% {
+    background: yellow;
+  }
+  100% {
+    background: green;
+  }
+}
+#app4 > .circle {
+  border: 1px solid black;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+}
+
+#app4 > .circle.active {
+  animation: change 1s infinite alternate;
+}
+
+
+/*# sourceMappingURL=main.7ff27874.css.map */
